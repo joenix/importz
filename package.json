@@ -1,0 +1,15 @@
+{
+	"name": "importz",
+	"version": "1.0.11",
+	"description": "",
+	"main": "dist/main.js",
+	"author": "joenix",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.4",
+		"babel-preset-env": "^1.6.1",
+		"webpack": "^3.11.0"
+	}
+}
