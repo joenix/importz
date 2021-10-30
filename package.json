@@ -1,8 +1,8 @@
 {
 	"name": "importz",
-	"version": "1.0.11",
+	"version": "2.0.5",
 	"description": "",
-	"main": "dist/main.js",
+	"main": "index.js",
 	"author": "joenix",
 	"license": "ISC",
 	"dependencies": {},

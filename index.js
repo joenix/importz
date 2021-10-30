@@ -24,9 +24,9 @@ module.exports = (
 			}
 		},
 
-		cip ( one )
+		cip ( depend )
 		{
-			return one.default || one;
+			return depend.default || depend;
 		}
 
 	},
@@ -37,7 +37,7 @@ module.exports = (
 
 	action.each( group, ( name ) => {
 
-		result[ name ] = callback( name, action.cip );
+		result[ name ] = action.cip( callback( name ) );
 
 	});
 

@@ -1,29 +1,32 @@
 # Importz
 
 ### 1. Install
-```console
-npm install --save-dev importz;
+
+```sh
+yarn add importz
+# or
+npm i importz
 ```
 
 ### 2. Import
-```console
-import Importz from 'importz';
+
+```js
+const importz = require("importz");
 ```
 
 ### 3. Use
-```console
-const List = Importz( ['one', 'two', 'three'], (name, cip) => {
 
-	return cip( require('./script/' + name + '.js') );
-
+```js
+const group = importz(["one", "two", "three"], name => {
+  return require("./script/" + name + ".js");
 });
 
-console.log( List );
+console.log(group);
 /*
 {
-	one: one.js,
-	two: two.js,
-	three: three.js
+  one: one.js,
+  two: two.js,
+  three: three.js
 }
 */
 ```
